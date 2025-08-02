@@ -2,6 +2,11 @@
    
 Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to work on a project simultaneously, manage code history, and collaborate efficiently. Key features include branching, merging, and the ability to revert changes. Git is commonly used with platforms like GitHub and GitLab for remote collaboration and code hosting.
 
+Refer YouTube Videos : https://www.youtube.com/watch?v=q8EevlEpQ2A
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/87260cb5-77cc-46dc-91bf-2bf1239aba17" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a88b8558-9d79-4254-9471-11bf97ff3d6e" />
+
 <---    Commands    --->
 
 01. git --version (Check version)
