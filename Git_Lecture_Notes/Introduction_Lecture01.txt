@@ -26,10 +26,15 @@ Git is a distributed version control system used to track changes in source code
 19. git switch branch_name (To switch into mentioned branch)
 20. git merge branch_name (To merge the branch)
 21. git checkout (To change the branch)
-22. git --oneline
+22. git log --oneline
 23. git diff commit1-hash commit2-hash
 24. git tag (Show tag if created)
 25. git tag newRelease (Create tag)
 26. git tag newRelease commit01-hash (To attached this tag to commit01 hash number)
 27. git tag newRelease commit01-hash -m "Release-1.0.1"
-28. 
+28. git pull --rebase origin main
+29. git checkout feature-branch
+30. git rebase main
+31. git restore . (To revert all previous activity into the current working file)
+32. git diff --cached (Check the change is correct or not in staged area)
+33. git restore --staged . (To revert staged file into unstaged condition)
