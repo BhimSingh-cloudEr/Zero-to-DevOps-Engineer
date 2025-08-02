@@ -18,3 +18,9 @@ Git is a distributed version control system used to track changes in source code
 12. git add . (Instead of . you use folder name also)
 13. git commit -m "Update Repo"
 14. git push origin main
+15. git branch 
+16. git branch feature1 (To create and swich to that branch simultaneously)
+17. git branch -d feature1 (To delete the branch)
+18. git switch 
+19. git switch branch_name (To switch into mentioned branch)
+git merge branch_name (To merge the branch)
