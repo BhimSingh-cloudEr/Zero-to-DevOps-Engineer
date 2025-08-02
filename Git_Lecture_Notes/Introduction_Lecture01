@@ -1,0 +1,20 @@
+<-------    Happy Learning - Git    ------>
+
+Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to work on a project simultaneously, manage code history, and collaborate efficiently. Key features include branching, merging, and the ability to revert changes. Git is commonly used with platforms like GitHub and GitLab for remote collaboration and code hosting.
+
+<---    Commands    --->
+
+01. git --version (Check version)
+02. git config user.name "userName"
+03. git config user.email "abc@gmail.com"
+04. git config --list (ListDown Configure User Details)
+05. git clone "repo-url" (Clone your repo to your local machine via HTTPS)
+06. git status (To check the status of the repo)
+07. cd (Change Directory to change the folder while working and go to another Directory)
+08. git remote -version
+09. git remote
+10. git remote add origin
+11. git remote set-url --add origin repo-url
+12. git add . (Instead of . you use folder name also)
+13. git commit -m "Update Repo"
+14. git push origin main
