@@ -1,5 +1,5 @@
 <-------    Happy Learning - Git    ------>
-
+   
 Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to work on a project simultaneously, manage code history, and collaborate efficiently. Key features include branching, merging, and the ability to revert changes. Git is commonly used with platforms like GitHub and GitLab for remote collaboration and code hosting.
 
 <---    Commands    --->
