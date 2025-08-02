@@ -2,39 +2,166 @@
    
 Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to work on a project simultaneously, manage code history, and collaborate efficiently. Key features include branching, merging, and the ability to revert changes. Git is commonly used with platforms like GitHub and GitLab for remote collaboration and code hosting.
 
+*** Git Commands Explanations ***
 
-<---    Commands    --->
+1.  git --version
+> Checks the installed Git version to confirm Git is available.
 
-01. git --version (Check version)
-02. git config user.name "userName"
-03. git config user.email "abc@gmail.com"
-04. git config --list (ListDown Configure User Details)
-05. git clone "repo-url" (Clone your repo to your local machine via HTTPS)
-06. git status (To check the status of the repo)
-07. cd (Change Directory to change the folder while working and go to another Directory)
-08. git remote -version
-09. git remote
-10. git remote add origin
-11. git remote set-url --add origin repo-url
-12. git add . (Instead of . you use folder name also)
+2.  git config user.name "userName"
+> Sets the Git username for your commits.
+
+3.  git config user.email "abc@gmail.com"
+> Sets the email linked to your commits (used by GitHub to identify you).
+
+4.  git config --list
+> Lists all current Git configuration settings like username, email, etc.
+
+5.  git clone "repo-url"
+> Downloads a remote repository (e.g., from GitHub) into your local machine.
+
+6.  git status
+> Shows the current changes in your repo — what’s staged, unstaged, or untracked.
+
+7.  cd
+> Change directory — used to move between folders in your terminal.
+
+8.  git remote -v
+> Shows the URLs of the remote repos (origin fetch and push).
+
+9.  git remote
+> Lists the short names of remotes (like origin).
+
+10. git remote add origin <repo-url>
+> Links your local repo to a remote one (you call this remote “origin”).
+
+11. git remote set-url --add origin <repo-url>
+> Changes or adds a new URL for an existing remote name.
+
+12. git add .
+> Adds all modified/created files to staging for commit (you can use a folder/file name instead).
+
 13. git commit -m "Update Repo"
+> Saves the staged changes with a message describing what you did.
+
 14. git push origin main
-15. git branch 
-16. git branch feature1 (To create and swich to that branch simultaneously)
-17. git branch -d feature1 (To delete the branch)
-18. git switch 
-19. git switch branch_name (To switch into mentioned branch)
-20. git merge branch_name (To merge the branch)
-21. git checkout (To change the branch)
+> Pushes the main branch changes to the remote repo on GitHub.
+
+15. git branch
+> Lists all branches in your repo and highlights the current one.
+
+16. git branch feature1
+> Creates a new branch named feature1.
+
+17. git branch -d feature1
+> Deletes the branch feature1 (use -D to force delete).
+
+18. git switch
+> Used to switch branches (preferred over checkout now).
+
+19. git switch branch_name
+> Switches to the specified branch.
+
+20. git merge branch_name
+> Merges the given branch into your current branch.
+
+21. git checkout
+> Used to switch branches or restore files (older method than switch/restore).
+
 22. git log --oneline
-23. git diff commit1-hash commit2-hash
-24. git tag (Show tag if created)
-25. git tag newRelease (Create tag)
-26. git tag newRelease commit01-hash (To attached this tag to commit01 hash number)
-27. git tag newRelease commit01-hash -m "Release-1.0.1"
+> hows commit history in a compact, single-line format.
+
+23. git diff commit1 commit2
+> Compares two commits and shows what changed between them.
+
+24. git tag
+> Lists all tags in the repo (used to mark release points).
+
+25. git tag newRelease
+> Creates a new lightweight tag called newRelease.
+
+26. git tag newRelease commit-hash
+> Tags a specific commit (not the latest one).
+
+27. git tag newRelease commit-hash -m "Release-1.0.1"
+> Creates an annotated tag with a message.
+
 28. git pull --rebase origin main
+> Pulls latest changes from main and rebases your commits on top.
+
 29. git checkout feature-branch
+> Switches to the branch feature-branch.
+
 30. git rebase main
-31. git restore . (To revert all previous activity into the current working file)
-32. git diff --cached (Check the change is correct or not in staged area)
-33. git restore --staged . (To revert staged file into unstaged condition)
+> Reapplies your changes from the current branch on top of main.
+
+31. git restore .
+> Restores all modified files back to the last commit state (discards changes).
+
+32. git diff --cached
+> Shows the difference between the staging area and the last commit.
+
+33. git restore --staged .
+> Removes files from the staging area (back to unstaged).
+
+34. git init
+> Initializes a new Git repo in the current directory.
+
+35. git pull
+> Fetches and merges updates from the remote repo into your current branch.
+
+36. git push -u origin branch-name
+> Pushes the current branch to remote and sets it to track the upstream branch.
+
+37. git rm filename
+> Deletes a file from your working directory and staging area.
+
+38. git stash
+> Temporarily saves your changes to switch branches without committing.
+
+39. git stash pop
+> Re-applies the stashed changes to your working directory.
+
+40. git stash list
+> Lists all the stashes you've saved.
+
+41. git stash drop
+> Deletes the latest stash from the list.
+
+42. git fetch origin
+> Downloads objects and refs from the remote repo, but doesn't merge.
+
+43. git cherry-pick <commit-hash>
+> Applies the changes from a specific commit onto your current branch.
+
+44. git revert <commit-hash>
+> Creates a new commit that undoes the changes from a previous commit.
+
+45. git log
+> Shows full commit history in detail.
+
+46. git log --graph --oneline --all
+> Visualizes all branches and commits as a graph.
+
+47. git clean -fd
+> Removes all untracked files and directories.
+
+48. git config --global core.editor "code --wait"
+> Sets VS Code as the default Git editor.
+
+49. git blame filename
+> Shows who wrote each line in a file and when (useful for debugging).
+
+50. git show <commit-hash>
+> Displays detailed info about a specific commit.
+
+51. git reset --soft HEAD~1
+> Moves the HEAD back one commit but keeps changes staged.
+
+52. git reset --mixed HEAD~1
+> Moves HEAD back and unstages the changes (default reset).
+
+53. git reset --hard HEAD~1
+> Completely removes the last commit and its changes.
+
+54. git config credential.helper cache
+> Temporarily caches your GitHub login to avoid repeated login prompts.
